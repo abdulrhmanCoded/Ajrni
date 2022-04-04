@@ -1,0 +1,210 @@
+body {
+  background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(216, 79, 25);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  header .ul-item:hover{
+    color: rgba(209, 205, 205, 0.933);
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: right;
+    width: 20%;
+    height: 100px; /* only for demonstration, should be removed */
+    
+    padding: 20px;
+    
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    text-decoration:none;
+    padding: 6px;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 700px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.nav-item {
+  text-decoration: none;
+    list-style: none;
+    display:inline-block;
+    height: 50px;
+    width: 8rem;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ul-item {
+    text-decoration: none;
+    color: rgba(209, 205, 205, 0.933);
+    
+
+}
+.ul-item:hover {
+  text-decoration: none;
+    
+    transition: 1.5s;
+}
+
+nav {
+    background-color: rgb(216, 79, 25);
+    height: 100%;
+    
+}
+.sidebar {
+  text-decoration: none;
+  padding-left: 20%;
+  
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(209, 205, 205, 0.933);
+}
+
+
+
+nav .sidebar:hover {
+  color: rgba(209, 205, 205, 0.933);
+}
+
+.s1 {
+    
+    font-size: 30px ;
+    padding-left: 20%;
+    
+}
+
+.f1 {
+    text-align:justify;
+}
+
+
+/*---- style footer ----*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #b9b8b8;
+  justify-content: center;
+ 
+}
+.card {
+  
+  width: 21.25rem;
+  padding: 15px;
+  margin: 13px;
+}
+
+.a1 h4 {
+  font-weight:bold;
+  text-align: center;
+  
+}
+.a1 p {
+  font-family: tahoma;
+  text-align: center;
+}
+
+.a2 {
+  text-align: center;
+  
+  font-display: black;
+}
+
+.a2 a{
+  font-family: tahoma;
+  font-size: 18px;
+  color: black;
+}
+.a3 {
+  margin: 13%;
+}
+.a3 i a{
+  flex-direction: none;
+}
+.a3 h4{
+  font-weight:bold;
+  
+}
+
+/*---- End style footer ----*/
+@media  (max-width: 600px) {
+  .header {
+    
+    padding-bottom: 1px ;
+    
+    font-size: 20px;
+    flex-direction: column;
+  }
+}
+@media  (max-width: 600px) {
+  nav {
+    float: center;
+    width: 100%;
+    height: 50%; /* only for demonstration, should be removed */
+    
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  nav, article{
+    flex-direction: column;
+  }
+  .s1 {
+    font-size: 25px ;
+    padding-left: 5px;
+  }
+  .sidebar {
+    text-decoration: none;
+    padding-left: 5px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(209, 205, 205, 0.933);
+  }
+ 
+  article {
+    
+    padding: 10px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 700px; /* only for demonstration, should be removed */
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+    justify-content: center;
+   
+  }
+  }
+
+
+
+
